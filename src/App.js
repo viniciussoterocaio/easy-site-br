@@ -1,15 +1,12 @@
-import logo from './imgs/logo.png';
 import './App.css';
+import Header from './Header.js'
+import InitialPage from './InitialPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Bem Vindo ao Easy Sites Brasil venha fazer Seu site.
-        </p>
-      </header>
+    <div id = 'site-body'>
+      <Header/>
+      <InitialPage/>
     </div>
   );
 }
