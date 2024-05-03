@@ -1,103 +1,182 @@
-/*DefiniÃ§Ã£o de Estilo Geral do Site*/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-html, body, #site-body {
-  margin: 0;
-  padding: 0;
-}
-/*DefiniÃ§Ã£o de Estilo Header do Site*/
-
-
-#header-site {
-  background: linear-gradient(to right, #832eff, #fe4ff2);
-  height: 50px;
-  width: 100%;
-  position: fixed;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border-bottom: black solid;
+body{
+    background-color: #281549;
+    
 }
 
-
-.icon-header {
-  display: inline-block;
-  font-size: 30px;
-  color: white;
-  margin-top: 10px;
-  padding-left: 20px;
+header{
+    background: linear-gradient(to right, #832eff, #fe4ff2);
+    min-height: 50px;
+    box-shadow: 0px 1px 5px black;
 }
 
-.icon-header:hover {
-  color: green;
-  cursor: pointer;
+#text-header{
+    display: inline-block;
 }
 
-#list-social-header {
-  position: absolute;
-  top: 0.5px;
-  right: 15%; /* Margem de 15% Ã  direita */
-  list-style-type: none;
+.icon-header{
+    display: inline-block;
+    padding-left: 4px;
+    font-size: 25px;
+    margin-top: 10px;
+    padding-right: 4px;
+    margin-right: 12px;
+    cursor: pointer;
+
 }
 
-#text-header {
-  color: white;
-  display: inline-block;
-  margin-left: 15%;
-  margin-top: 5px;
+li:hover{
+    color:green;
+    border-radius: 100%;
 }
 
-#text-header:hover {
-  color: green;
-  cursor: pointer;
+#list-social-header{
+    display: inline;
+    margin-left: 62.9%;
 }
 
+#header-content{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    min-width: 300px;
+    max-height: 100%;
+    min-height: 50px;
 
-@media screen and (max-width: 900px) {
-  #list-social-header {
-    right: auto; /* Reinicia a posiÃ§Ã£o para a direita automÃ¡tica */
-    left: 50%; /* Move o elemento para o meio */
-    transform: translateX(-50%); /* Centraliza horizontalmente */
-    margin-right: 0; /* Remove a margem direita */
-    position: absolute; /* MantÃ©m a posiÃ§Ã£o absoluta */
-  }
-
-  #text-header {
-    display: none;
-  }
 }
 
+@media screen and (max-width: 1000px) {
+    #text-header{
+        display: none;
+    }
 
-/*DefiniÃ§Ã£o de Estilo Home do Site*/
 
-#initial-page{
-  padding-top: 50px;
-}
+    #list-social-header{
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-#initial-page-main{
-  background-size: cover;
-  background-color: #281549;
-  width: 100%;
-  height: 100vh;
+    #animation-text{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #main-text-home {
+        width: 200px!important; ;
+        font-size: 40px !important; /* Adicione !important para garantir que essa regra seja priorizada */
+        width: auto; /* Tornando a largura automática para ajustar ao texto */
+    }
+
+    #main-text-home-second{
+        font-family: "Roboto", sans-serif;
+        color: #ff4ff3;
+        width: 300px !important;
+    }
 }
 
 #animation-text{
-  margin-top: -120px;
-  margin-left: 200px;
-  color: white;
-  font-size:x-large
+    color: white;
+    font-size:x-large;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 70px;
+    text-shadow: 5px 5px 10px black;
+    position: fixed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#initial-page-main{
+    min-width: 260px;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+#imgs-animations{
+    width: 200px;
+    display: inline-block;
+    min-width: 100px;
+}
+
+#main-text-home {
+    font-family: "Bungee Outline", sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    font-style: normal;
+    color: white;
+    position: relative;
+    width: 600px;
+    min-width: 300px;
+}
+
+#main-text-home-second{
+    font-family: "Roboto", sans-serif;
+    color: #ff4ff3;
+}
+
+
+#initial-page-content{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    min-width: 300px;
+    max-height: 100%;
+    min-height: 50px;
+}
+
+initial-page{
+    flex: 1;
+}
+
+#main-button-home{
+    margin-top: 40px;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+
+    &:after {
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #832eff;
+        border-radius: 10rem;
+        z-index: -2;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: darken(#832eff, 15%);
+        transition: all .3s;
+        border-radius: 10rem;
+        z-index: -1;
+    }
+    &:hover {
+        color: #fff;
+        &:before {
+        width: 100%;
+        }
+    }
+
 }

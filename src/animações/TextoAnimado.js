@@ -15,15 +15,15 @@ function TextoAnimado() {
         setTimeout(() => {
           setTexto('');
           setIndex(0);
-        }, 2000); // Espera 2 segundos antes de reiniciar a animação
+        }, 2000);
       }
-    }, 100); // Velocidade da animação (100ms por letra)
+    }, 100);
 
     return () => clearTimeout(timer);
-  }, [texto, index]); // Executa o efeito quando o texto ou o índice mudar
+  }, [texto, index]);
 
   return (
-    <p id = "animation-text">{texto}</p>
+    <span id = "animation-text">{texto}</span>
   );
 }
 
