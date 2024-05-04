@@ -7,7 +7,6 @@ function InitialPage() {
         <img id = "initial-page-logo"src={logo} alt="logo da Easy Sites Brasil" />
         <TextoAnimado/>
       </div>
-      <br></br>
       <div id = "initial-page-content">
         <div id = "initial-page-main">
           <h1 id = "main-text-home" className='h1-site'>Crie seu site aqui!</h1>

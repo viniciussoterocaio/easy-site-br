@@ -131,19 +131,14 @@ li:hover{
 #initial-page-content{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1%;
     max-width: 1000px;
     min-width: 300px;
     max-height: 100%;
     min-height: 50px;
 }
 
-initial-page{
-    flex: 1;
-}
-
 #main-button-home{
-    margin-top: 5%;
+    margin-top: 15%;
     display: inline-block;
     padding: .75rem 1.25rem;
     border-radius: 10rem;
