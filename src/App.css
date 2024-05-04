@@ -36,7 +36,7 @@ li:hover{
 
 #list-social-header{
     display: inline;
-    margin-left: 62.9%;
+    margin-left: 50%;
 }
 
 #header-content{
@@ -49,7 +49,7 @@ li:hover{
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     #text-header{
         display: none;
     }
@@ -67,17 +67,23 @@ li:hover{
         margin-left: auto;
         margin-right: auto;
     }
+}
 
+@media screen and (max-width: 500px) {
     #main-text-home {
         width: 200px!important; ;
-        font-size: 40px !important; /* Adicione !important para garantir que essa regra seja priorizada */
-        width: auto; /* Tornando a largura automática para ajustar ao texto */
+        font-size: 46px !important;
     }
 
     #main-text-home-second{
-        font-family: "Roboto", sans-serif;
-        color: #ff4ff3;
         width: 300px !important;
+    }
+
+    #initial-page-content{
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -87,9 +93,10 @@ li:hover{
     font-family: "Jersey 15", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-top: 70px;
+    margin-top: -120px;
+    margin-left:160px;
     text-shadow: 5px 5px 10px black;
-    position: fixed;
+    position: absolute;
 }
 
 #initial-page-main{
@@ -124,6 +131,7 @@ li:hover{
 #initial-page-content{
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1%;
     max-width: 1000px;
     min-width: 300px;
     max-height: 100%;
@@ -179,4 +187,13 @@ initial-page{
         }
     }
 
+}
+
+footer{
+    background: linear-gradient(to right, #832eff, #fe4ff2);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.3%;
 }

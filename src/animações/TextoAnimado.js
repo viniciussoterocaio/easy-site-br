@@ -23,7 +23,7 @@ function TextoAnimado() {
   }, [texto, index]);
 
   return (
-    <span id = "animation-text">{texto}</span>
+    <p id = "animation-text">{texto}</p>
   );
 }
 
