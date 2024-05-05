@@ -11,7 +11,7 @@ function InitialPage() {
         <div id = "initial-page-main">
           <h1 id = "main-text-home" className='h1-site'>Crie seu site aqui!</h1>
           <h2 id = "main-text-home-second" className='h2-site' >Bem vindo</h2>
-          <button id = 'main-button-home'>Quero um site</button>
+          <button class = 'button_slide slide_right'>Quero um site</button>
         </div>
         <div id = "imgs-animations">
         </div>
